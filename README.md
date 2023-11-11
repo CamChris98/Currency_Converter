@@ -1,28 +1,24 @@
 # Currency_Converter
 ## Overview
-This is a program that i wrote in javascript and HTML for the purpose of converting currency and the main focus and reason for writing this program is to demosntrate understanding of the javascript language and 
+This is a program that i wrote in javascript and HTML for the purpose of converting currency and the main focus and reason for writing this program is to demonstrate understanding of the javascript language and its syntax as well as its operations. 
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+# Video of program
+[Software Demonstration video](https://youtu.be/zNDYJn1IZpg)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+My development environment involved the Visual Studio Code IDE and the webapge was able to be shown throught the live server feature on VScode. 
 
-{Describe the programming language that you used and any libraries.}
+Javascript and HTML was used in this program. 
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [W3 Schools](https://www.w3schools.com/js/default.asp)
+- [Geeks for Geeks](https://www.geeksforgeeks.org/learn-javascript-js-roadmap-for-beginners/?ref=shm_outind)
+- [Youtube](https://www.youtube.com/watch?v=W6NZfCO5SIk)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Add more currencies that are widely used in the world
+- Incorporate a conversion fee to be added and deducted from the exchanged currency
+  
