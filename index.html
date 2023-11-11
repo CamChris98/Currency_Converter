@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+</head>
+<body>
+
+    <h1> Currency converter</h1>
+    <img src="1200px-Flag_of_the_United_States.svg.png" alt="American Flag" style="height:128px;width: 138px;">
+    <img src="Flag_of_Europe.svg.png" alt="Europe Flag" style="height:128px;width: 138px;">
+    <img src="images-2.png" alt="Canada Flag" style="height:128px;width: 138px;">
+    <img src="images.png" alt="Mexico Flag" style="height:128px;width: 138px;">
+    <img src="jp.png" alt="Japan Flag" style="height:128px;width: 138px;">
+  <script>
+    // Listed conversion rates for each currency
+    const exchangeRates = {
+        USD: {
+            MXN: 17.53,
+            CAD: 1.38,
+            EUR: 0.93,
+            JPY: 150.88
+        },
+        MXN: {
+            USD: 0.05,
+            CAD: 0.079,
+            EUR: 0.053,
+            JPY: 8.60
+        },
+        CAD: {
+            USD: 0.73,
+            MXN: 12.72,
+            EUR: 0.68,
+            JPY: 109.42
+        },
+        EUR: {
+            USD: 1.07,
+            MXN: 18.78,
+            CAD: 1.18,
+            JPY: 161.55
+        },
+        JPY: {
+            USD: .0061,
+            MXN: .12,
+            CAD: .009,
+            EUR: .0062
+
+
+        }
+    };
+
+    // Function to convert amount from one currency to another 
+    function convertCurrency(amount, fromCurrency, toCurrency) {
+      if (fromCurrency === toCurrency) {
+        return amount;
+      } else {
+        const rate = exchangeRates[fromCurrency][toCurrency];
+        return rate * amount;
+      }
+    }
+
+    // Function to display the converted amount
+    function displayConvertedAmount() {
+      const amount = parseFloat(document.getElementById('amount').value);
+      const fromCurrency = document.getElementById('fromCurrency').value;
+      const toCurrency = document.getElementById('toCurrency').value;
+
+      const convertedAmount = convertCurrency(amount, fromCurrency, toCurrency);
+
+      alert(`${amount} ${fromCurrency} is equal to ${convertedAmount.toFixed(2)} ${toCurrency}`);
+    }
+  </script>
+
+  <!-- Form for user input -->
+  <form>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" step="0.01" required>
+
+    <label for="fromCurrency">From Currency:</label>
+    <select id="fromCurrency" required>
+      <option value="USD">USD</option>
+      <option value="MXN">MXN</option>
+      <option value="EUR">EUR</option>
+      <option value="CAD">CAD</option>
+      <option value="JPY">JPY</option>
+    </select>
+
+    <label for="toCurrency">To Currency:</label>
+    <select id="toCurrency" required>
+      <option value="USD">USD</option>
+      <option value="MXN">MXN</option>
+      <option value="EUR">EUR</option>
+      <option value="CAD">CAD</option>
+      <option value="JPY">JPY</option>
+    </select>
+
+    <button type="button" onclick="displayConvertedAmount()">Convert</button>
+  </form>
+
+</body>
+</html>
