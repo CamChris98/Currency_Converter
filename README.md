@@ -1,6 +1,6 @@
 # Currency_Converter
 ## Overview
-This is a program that i wrote in javascript and HTML for the purpose of converting currency and the main focus and reason for writing this program is to demonstrate understanding of the javascript language and its syntax as well as its operations. 
+This is a program that i wrote in javascript and HTML for the purpose of converting currency and the main focus and reason for writing this program is to demonstrate understanding of the javascript language and its syntax as well as its operations. The way the program works is simple: the user enters an amount in the amount field and then they select in the small drop down menus the origin currency and the currecny to convert to. the result will display how much the amount is converted into. 
 
 # Video of program
 [Software Demonstration video](https://youtu.be/zNDYJn1IZpg)
